@@ -26,4 +26,24 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function catalog()
+    {
+        return view('catalog');
+    }
+    public function learn_reading()
+    {
+        return view('learn/learn_reading');
+    }
+    public function learn_writing()
+    {
+        return view('learn/learn_writing');
+    }
+    public function learn_listening()
+    {
+        return view('learn/learn_listening');
+    }
+    public function learn_speaking()
+    {
+        return view('learn/learn_speaking');
+    }
 }

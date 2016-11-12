@@ -42,3 +42,8 @@ Route::get('/about', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/catalog', 'HomeController@catalog');
+Route::get('/learn_reading', 'HomeController@learn_reading');
+Route::get('/learn_speaking', 'HomeController@learn_speaking');
+Route::get('/learn_listening', 'HomeController@learn_listening');
+Route::get('/learn_writing', 'HomeController@learn_writing');
