@@ -26,8 +26,12 @@
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;"><span>Settings</span></a>
+                    </li>
+                    <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                     </ul>
                 </li>
             @endif
@@ -51,46 +55,42 @@
 	</div> 
 
 	<!-- *****************************************************************************************************************
-	 STORIES SECTION
-	 ***************************************************************************************************************** -->
-	  <div class="container mtb">
-	 	<div class="row centered">
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
-				<div class="he-wrap tpl6">
-                <a href="{{ url('/reading') }}"><img href="{{ url('/reading') }}" class="img-responsive" src="assets/img/course.jpg" alt=""></a>
-				</div><!-- he wrap -->
-				<h4 class="ctitle"><a href="{{ url('/reading') }}">READING</a></h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->
+     COURSE SECTION
+     ***************************************************************************************************************** -->
 
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
-				<div class="he-wrap tpl6">
-                  <a href="{{ url('/writing') }}"><img class="img-responsive" src="assets/img/course.jpg" alt=""></a>
-				</div><!-- he wrap -->
-              <h4 class="ctitle"><a href="{{ url('/reading') }}">WRITING</a></h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->
+    <div class="container mtb">
+        <div class="row centered">
+            <h2>Courses</h2>
 
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
-				<div class="he-wrap tpl6">
-                  <a href="{{ url('/listening') }}"><img class="img-responsive" src="assets/img/course.jpg" alt=""></a>
-				</div><!-- he wrap -->
-              <h4 class="ctitle"><a href="{{ url('/listening') }}">LISTENING</a></h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="he-wrap tpl6">
+                  <a href="{{ url('/listening') }}"><img class="img-responsive" src="assets/img/portfolio_09.jpg" alt=""></a>
+                </div><!-- he wrap -->
+              <h4 class="ctitle"><a href="{{ url('/listening') }}">Listening Comprehension</a></h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="hline"></div>
+            </div><! --/col-lg-3 -->      
 
-		 	<div class="col-lg-3 col-md-3 col-sm-3">
-				<div class="he-wrap tpl6">
-                  <a href="{{ url('/speaking') }}"><img class="img-responsive" src="assets/img/course.jpg" alt=""></a>
-				</div><!-- he wrap -->
-              <h4 class="ctitle"><a href="{{ url('/speaking') }}">SPEAKING</a></h5>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<div class="hline"></div>
-		 	</div><! --/col-lg-3 -->		 	
-		 	
-	 	</div><! --/row -->
-	 </div><! --/container -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="he-wrap tpl6">
+                <a href="{{ url('/reading') }}"><img href="{{ url('/structure') }}" class="img-responsive" src="assets/img/portfolio_09.jpg" alt=""></a>
+                </div><!-- he wrap -->
+                <h4 class="ctitle"><a href="{{ url('/structure') }}">Structure and Written Expression</a></h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="hline"></div>
+            </div><! --/col-lg-3 -->
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="he-wrap tpl6">
+                  <a href="{{ url('/writing') }}"><img class="img-responsive" src="assets/img/portfolio_09.jpg" alt=""></a>
+                </div><!-- he wrap -->
+              <h4 class="ctitle"><a href="{{ url('/reading') }}">Reading Comprehension</a></h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="hline"></div>
+            </div><! --/col-lg-3 -->
+
+              
+            
+        </div><! --/row -->
+     </div><! --/container -->
 @endsection

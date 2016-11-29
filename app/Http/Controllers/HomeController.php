@@ -34,16 +34,30 @@ class HomeController extends Controller
     {
         return view('learn/learn_reading');
     }
-    public function learn_writing()
-    {
-        return view('learn/learn_writing');
-    }
     public function learn_listening()
     {
         return view('learn/learn_listening');
     }
-    public function learn_speaking()
+    public function learn_structure()
     {
-        return view('learn/learn_speaking');
+        return view('learn/learn_structure');
+    }
+  
+    public function start_reading()
+    {
+        return view('start/start_reading');
+    }
+    public function start_listening()
+    {
+        return view('start/start_listening');
+    }
+    public function start_structure()
+    {
+        return view('start/start_structure');
+    }
+    public function simulation()
+    {
+        return view('simulation/simulation_toefl');
     }
 }
+

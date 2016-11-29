@@ -101,62 +101,41 @@
      <!-- *****************************************************************************************************************
      COURSE SECTION
      ***************************************************************************************************************** -->
-        <div class="container-fluid badge-theme" id="course">
-                <div class="row text-center">
-                    <div class="course col-md-6">
-                        <div class="he-wrap tpl6">
-                        <a href="{{ url('/reading') }}">
-                        <img src="assets/img/body_reading.jpg" alt="reading book">
-                            <div class="he-view">
-                                <div class="bg a0" data-animate="fadeIn">
-                                    <h3 class="a1" data-animate="fadeInDown">Reading</h3>
-                                    <p></p>
-                                </div><!-- he bg -->
-                            </div><!-- he view -->
-                        </a>            
-                        </div><!-- he wrap -->
-                    </div>
-                    <div class="course col-md-6">
-                        <div class="he-wrap tpl6">
-                        <a href="{{ url('/writing') }}">
-                        <img src="assets/img/writing.jpg" alt="writing">
-                            <div class="he-view">
-                                <div class="bg a0" data-animate="fadeIn">
-                                    <h3 class="a1" data-animate="fadeInDown">Writing</h3>
-                                    <p></p>
-                                </div><!-- he bg -->
-                            </div><!-- he view -->
-                        </a>            
-                        </div><!-- he wrap -->
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="course col-md-6">
-                        <div class="he-wrap tpl6">
-                        <a href="{{ url('/listening') }}">
-                        <img src="assets/img/listening_2.jpg" alt="">
-                            <div class="he-view">
-                                <div class="bg a0" data-animate="fadeIn">
-                                    <h3 class="a1" data-animate="fadeInDown">Listening</h3>
-                                    <p></p>
-                                </div><!-- he bg -->
-                            </div><!-- he view -->
-                        </a>            
-                        </div><!-- he wrap -->
-                    </div>
-                    <div class="course col-md-6">
-                        <div class="he-wrap tpl6">
-                        <a href="{{ url('/speaking') }}">
-                        <img src="assets/img/speaking_2.jpg" alt="">
-                            <div class="he-view">
-                                <div class="bg a0" data-animate="fadeIn">
-                                    <h3 class="a1" data-animate="fadeInDown">Speaking</h3>
-                                    <p></p>
-                                </div><!-- he bg -->
-                            </div><!-- he view -->
-                        </a>            
-                        </div><!-- he wrap -->
-                    </div>
-                </div>
-        </div>
+
+    <div class="container mtb">
+        <div class="row centered">
+            <h2>Courses</h2>
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="he-wrap tpl6">
+                  <a href="{{ url('/listening') }}"><img class="img-responsive" src="assets/img/portfolio_09.jpg" alt=""></a>
+                </div><!-- he wrap -->
+              <h4 class="ctitle"><a href="{{ url('/listening') }}">Listening Comprehension</a></h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="hline"></div>
+            </div><! --/col-lg-3 -->      
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="he-wrap tpl6">
+                <a href="{{ url('/reading') }}"><img href="{{ url('/structure') }}" class="img-responsive" src="assets/img/portfolio_09.jpg" alt=""></a>
+                </div><!-- he wrap -->
+                <h4 class="ctitle"><a href="{{ url('/structure') }}">Structure and Written Expression</a></h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="hline"></div>
+            </div><! --/col-lg-3 -->
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="he-wrap tpl6">
+                  <a href="{{ url('/writing') }}"><img class="img-responsive" src="assets/img/portfolio_09.jpg" alt=""></a>
+                </div><!-- he wrap -->
+              <h4 class="ctitle"><a href="{{ url('/reading') }}">Reading Comprehension</a></h5>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="hline"></div>
+            </div><! --/col-lg-3 -->
+
+              
+            
+        </div><! --/row -->
+     </div><! --/container -->
+
 @endsection

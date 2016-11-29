@@ -8,10 +8,10 @@
                     </div>
 
                     <div class="col-lg-10">
-                        <h4>Listening</h4>
+                        <h4>Listening Comprehension</h4>
                         <p>Lets start with the easy one! </p>
 
-                        <p><br/><a href="#" class="btn btn-theme">Resume 70%</a></p>
+                        <p><br/><a href="{{ url('/start_listening') }}" class="btn btn-theme">Resume 70%</a></p>
                     </div>
                 </div><! --/row -->
               </div>

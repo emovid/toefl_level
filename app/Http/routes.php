@@ -23,16 +23,12 @@ Route::get('/listening', function () {
     return view('listeing');
 });
 
-Route::get('/writing', function () {
-    return view('writing');
-});
-
 Route::get('/reading', function () {
     return view('reading');
 });
 
-Route::get('/speaking', function () {
-    return view('speaking');
+Route::get('/struture', function () {
+    return view('structure');
 });
 
 Route::get('/about', function () {
@@ -44,6 +40,11 @@ Route::auth();
 Route::get('/home', 'HomeController@index');
 Route::get('/catalog', 'HomeController@catalog');
 Route::get('/learn_reading', 'HomeController@learn_reading');
-Route::get('/learn_speaking', 'HomeController@learn_speaking');
+Route::get('/learn_structure', 'HomeController@learn_structure');
 Route::get('/learn_listening', 'HomeController@learn_listening');
-Route::get('/learn_writing', 'HomeController@learn_writing');
+
+Route::get('/start_reading', 'HomeController@start_reading');
+Route::get('/start_listening', 'HomeController@start_listening');
+Route::get('/start_structure', 'HomeController@start_structure');
+
+Route::get('/simulation', 'HomeController@simulation');

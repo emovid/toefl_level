@@ -31,9 +31,13 @@
                         {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 
-                    <ul class="dropdown-menu">
-                        <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                    </ul>
+                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;"><span>Settings</span></a>
+                    </li>
+                    <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
                 </li>
             @endif
             
@@ -50,22 +54,21 @@
 	  <div class="container mtb">
 	 	<div class="row" style="min-height: 400px">
           
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <div class="col-lg-4 col-md-4 col-sm-4">
               <h3>Dashboard</h3>
 				<ul id="tree3">
                 <li><a href="#" class="card">Course</a>
                     <ul>
-                      <li><a href="{{ url('/learn_reading') }}">Reading</a></li>
-                      <li><a href="{{ url('/learn_writing') }}">Writing</a></li>
-                      <li><a href="{{ url('/learn_listening') }}">Listening</a></li>
-                      <li><a href="{{ url('/learn_speaking') }}">Speaking</a></li>
+                      <li><a href="{{ url('/learn_reading') }}">Reading Comprehension</a></li>
+                      <li><a href="{{ url('/learn_listening') }}">Listening Comprehension</a></li>
+                      <li><a href="{{ url('/learn_structure') }}">Structure and Written Expression</a></li>
                     </ul>
                 </li>
 
                 </ul>
 		 	</div><! --/col-lg-3 -->
 	 	
-		 	<div class="col-lg-9 col-md-9 col-sm-9">
+		 	<div class="col-lg-8 col-md-8 col-sm-8">
 		      @section('learn.content')
               <div class="well col-xs-12">
                 <div class="row" style="margin:auto">
