@@ -48,3 +48,4 @@ Route::get('/start_listening', 'HomeController@start_listening');
 Route::get('/start_structure', 'HomeController@start_structure');
 
 Route::get('/simulation', 'HomeController@simulation');
+Route::get('/simulation_listening', 'HomeController@simulation_listening');

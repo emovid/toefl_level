@@ -59,5 +59,9 @@ class HomeController extends Controller
     {
         return view('simulation/simulation_toefl');
     }
+    public function simulation_listening()
+    {
+        return view('simulation/simulation_section1');
+    }
 }
 

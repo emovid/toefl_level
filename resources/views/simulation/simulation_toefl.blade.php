@@ -21,40 +21,19 @@
 
         <div class="row x_title">
           <div class="col-md-6">
-            <h3>Writing <small>Test Simulation</small></h3>
+            <h3>TOEFL Simulation</h3>
           </div>
         </div>
 
         <div class="col-md-12 col-sm-12 col-xs-12">
-        <form class="form-horizontal form-label-left">
-        <h6>Choose the answer of the question below</h6>
-        <h3>1. _____ the demands of aerospace, medicine, and agriculture, aengineers, are creating exotic new metallic substances.</h3> 
-          <div class="form-group" style="font-size: 1.2em;">
-            <div class="radio">
-              <label>
-                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Meet
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> Being met are
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> To meet
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> They are meeting
-              </label>
-            </div>
-          </div>
+        <form class="form-horizontal form-label-left" action="{{ url('/simulation_listening') }}">
+        <h6>Introduction</h6>
+        <h4>In this exercise, you will have three sections that you have to answer. They are Listening Comprehension, Structure and Writing Expression, and Reading Comprehension. You have to finish all of that section within 90 minutes. Good luck!</h4> 
+          
               <div class="ln_solid"></div>
               <div class="form-group" style="float: right">
                 
-                  <button type="submit" class="btn btn-success">Confirm</button>
+                  <button type="submit" class="btn btn-success">Next</button>
                 
               </div>
           </form>
